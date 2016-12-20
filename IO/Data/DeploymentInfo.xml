@@ -1,0 +1,9 @@
+<Deployment>
+  <CustomerName></CustomerName>
+  <LicenseID></LicenseID>
+  <DataGatherDateTime></DataGatherDateTime>
+  <LogRhythmMajorVersion></LogRhythmMajorVersion>
+  <LogRhythmMinorVersion></LogRhythmMinorVersion>
+  <IndexDP_IPAddress></IndexDP_IPAddress>
+  <IndexDP_HostName></IndexDP_HostName>
+</Deployment>

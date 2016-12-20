@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogRhythmToolKit>
+  <Global>
+    - <TextBoxes>
+- 		<TextBox>
+			<ID>0</ID> 
+			<Name>CustomerName,CustomerContact,LogRhythmAnalyst</Name> 
+			<Label>Customer Name,Contact Name,LogRhythm Analyst</Label> 
+			<Header>Customer Information</Header> 
+			<Description></Description> 
+			<Value></Value> 
+		</TextBox>
+	</TextBoxes>
+  </Global>
+  <Bundle>
+    <Name>Data Gather V1</Name>
+    <Version>6.3.0.8001</Version>
+    <Group>Professional Services</Group>
+    <LastModified>12/14/2015</LastModified>
+    <ShortDescription>This Bundle will perform a Health Check</ShortDescription>
+    <LongDescription>
+    </LongDescription>
+    <SupportedLogRhythmVersions>
+      <Major>6</Major>
+      <Minor>3</Minor>
+      <Release>8000</Release>
+    </SupportedLogRhythmVersions>
+    <Arming>
+      <Runs>0</Runs>
+      <ReArms>-1</ReArms>
+    </Arming>
+    <CompressOutput>1</CompressOutput>
+    <Dependencies>
+      <Directory>
+      </Directory>
+      <File>
+      </File>
+    </Dependencies>
+	<ReportButtons>0011</ReportButtons> 
+  </Bundle>
+  <Elements>
+	<Element>
+		<Name>PlatformManager</Name>
+		<ShortDesc>Get Platform Manager Info</ShortDesc>
+		<SequenceOrder>1</SequenceOrder>
+		<Asynchronous>False</Asynchronous>
+		<State>0</State>
+		<TimeOut>600000</TimeOut>
+		<AuthCode>3</AuthCode>
+		<StartParameters>
+			<TextBox>0</TextBox>
+		</StartParameters>
+		<PreRunParameters>
+		</PreRunParameters>
+		<LRAppliance>100</LRAppliance>
+	</Element>
+	<Element>
+		<Name>DataProcessor</Name>
+		<ShortDesc>Get DataProcessor Info</ShortDesc>
+		<SequenceOrder>2</SequenceOrder>
+		<Asynchronous>False</Asynchronous>
+		<State>0</State>
+		<TimeOut>600000</TimeOut>
+		<AuthCode>3</AuthCode>
+		<StartParameters>
+		</StartParameters>
+		<PreRunParameters>
+		</PreRunParameters>
+		<LRAppliance>010</LRAppliance>
+	</Element>
+		<Element>
+		<Name>DataIndexer</Name>
+		<ShortDesc>Get Data Index Info</ShortDesc>
+		<SequenceOrder>3</SequenceOrder>
+		<Asynchronous>False</Asynchronous>
+		<State>0</State>
+		<TimeOut>600000</TimeOut>
+		<AuthCode>1</AuthCode>
+		<StartParameters>
+		</StartParameters>
+		<PreRunParameters>
+		</PreRunParameters>
+	</Element>
+		<Element>
+		<Name>AIE</Name>
+		<ShortDesc>Get AIE Info</ShortDesc>
+		<SequenceOrder>4</SequenceOrder>
+		<Asynchronous>False</Asynchronous>
+		<State>0</State>
+		<TimeOut>600000</TimeOut>
+		<AuthCode>1</AuthCode>
+		<StartParameters>
+		</StartParameters>
+		<PreRunParameters>
+		</PreRunParameters>
+		<LRAppliance>001</LRAppliance>
+	</Element>
+  </Elements>
+</LogRhythmToolKit>
